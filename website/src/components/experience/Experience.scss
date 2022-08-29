@@ -1,0 +1,54 @@
+.experience_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+
+  .experience_content {
+    margin: 2rem auto;
+    .experience_details {
+      margin: 2rem auto;
+    }
+  }
+  //Direct div of the container
+  & > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    transition: var(--transition);
+    &:hover {
+      background: transparent;
+      border-color: var(--color-primary-variant);
+      cursor: default;
+    }
+  }
+
+  & > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+}
+
+/* ========== Media Query (medium devices) =================== */
+@media screen and (max-width: 1024px) {
+  .experience_container {
+    grid-template-columns: 1fr;
+    & > div {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+/* ========== Media Query (small devices) =================== */
+@media screen and (max-width: 600px) {
+  .experience_container {
+    gap: 1rem;
+    & > div {
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+  }
+}
