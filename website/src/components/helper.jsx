@@ -13,8 +13,10 @@ export const categories = {
     HOME: '#',
     ABOUT: '#about',
     EXPERIENCE: '#experience',
+    PORTFOLIO: '#portfolio',
     SERVICES: '#services',
     CONTACT: '#contact',
+    TESTIMONIALS: '#testimonials'
 }
 
 export const portfolio_data = [

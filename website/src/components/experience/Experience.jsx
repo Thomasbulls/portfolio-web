@@ -41,7 +41,7 @@ const Experience = () => {
                         <article className="experience_details">
                               
                             <h4>Git / Webpack / Babel</h4>
-                            <small className='text-light'>Experienced</small>
+                            <small className='text-light'>Basic</small>
                         </article>
                     </div>
                 </div>

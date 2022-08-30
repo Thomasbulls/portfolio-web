@@ -12,10 +12,10 @@
 
 /* color variables used through out the website */
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-bg: #001219;
+  --color-bg-variant: #005F73;
+  --color-primary: #94D2BD;
+  --color-primary-variant: #E9D8A6;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -43,7 +43,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  background-image: url(../src/assets/diagmonds.png);
 }
 
 /* ===== General Style ====== */
@@ -138,4 +138,15 @@ img {
   section > h2 {
     margin-bottom: 2rem;
   }
+}
+
+/*======================= Load Spinner ================================*/
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834)
+  url("https://i.pinimg.com/originals/9f/b1/25/9fb125f1fedc8cc62ab5b20699ebd87d.gif") center no-repeat;
+  object-fit: cover;
+  z-index: 1;
 }

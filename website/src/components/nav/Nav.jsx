@@ -5,6 +5,8 @@ import {MdOutlineComputer} from "react-icons/md";
 import {IoPersonOutline} from "react-icons/io5";
 import {GiSmartphone} from "react-icons/gi";
 import {categories} from "../helper";
+import {FiPaperclip} from "react-icons/fi";
+import {BsChatSquareQuote} from "react-icons/bs";
 
 const Nav = () => {
 
@@ -30,12 +32,15 @@ const Nav = () => {
            <a href={categories.EXPERIENCE}
               onClick={() => changeNav(categories.EXPERIENCE)}
               className={activeNav === categories.EXPERIENCE ? 'active' : ''}><MdOutlineComputer/></a>
-           {/*<a href="#portfolio"><FiPaperclip/></a>*/}
+           {/****** Portfolio *********/}
+           <a href={categories.PORTFOLIO}
+               onClick={() => changeNav(categories.PORTFOLIO)}
+               className={activeNav === categories.PORTFOLIO ? 'active' : ''}><FiPaperclip/></a>
 
-           {/*/!****** SERVICES *********!/*/}
-           {/*<a href={categories.SERVICES}*/}
-           {/*   onClick={() => changeNav(categories.SERVICES)}*/}
-           {/*   className={activeNav === categories.SERVICES ? 'active' : ''}><RiServiceLine/></a>*/}
+           {/****** Testimonials *********/}
+           <a href={categories.TESTIMONIALS}
+              onClick={() => changeNav(categories.TESTIMONIALS)}
+              className={activeNav === categories.TESTIMONIALS ? 'active' : ''}><BsChatSquareQuote/></a>
 
            {/****** CONTACT *********/}
 

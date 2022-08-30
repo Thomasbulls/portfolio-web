@@ -1,18 +1,18 @@
+
 .experience_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-
+  gap: 1rem;
   .experience_content {
     margin: 2rem auto;
     .experience_details {
-      margin: 2rem auto;
+      margin: 1rem auto;
     }
   }
   //Direct div of the container
   & > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 1rem 2rem;
     border: 1px solid transparent;
     border-radius: 2rem;
     transition: var(--transition);
